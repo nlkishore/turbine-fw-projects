@@ -1,0 +1,254 @@
+// ------------------------------------------------------------------
+// Transitive dependencies of this project determined from the
+// maven pom organized by organization.
+// ------------------------------------------------------------------
+
+Turbine Web Application
+
+
+From: 'an unknown organization'
+
+  - Caffeine cache (https://github.com/ben-manes/caffeine) com.github.ben-manes.caffeine:caffeine:jar:3.1.8
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+  - FindBugs-jsr305 (http://findbugs.sourceforge.net/) com.google.code.findbugs:jsr305:jar:3.0.2
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+  - Protocol Buffers [Core] (https://developers.google.com/protocol-buffers/protobuf-java/) com.google.protobuf:protobuf-java:jar:3.25.1
+    License: BSD-3-Clause  (https://opensource.org/licenses/BSD-3-Clause)
+
+  - PrefixMap : Implementation (https://github.com/nielsbasjes/prefixmap) nl.basjes.collections:prefixmap:jar:2.0
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+  - Yauaa : Analyzer (https://yauaa.basjes.nl) nl.basjes.parse.useragent:yauaa:jar:7.26.1
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+  - Checker Qual (https://checkerframework.org/) org.checkerframework:checker-qual:jar:3.37.0
+    License: The MIT License  (http://opensource.org/licenses/MIT)
+
+  - JSON in Java (https://github.com/douglascrockford/JSON-java) org.json:json:bundle:20240303
+    License: Public Domain  (https://github.com/stleary/JSON-java/blob/master/LICENSE)
+
+  - quartz (https://www.quartz-scheduler.org/) org.quartz-scheduler:quartz:jar:2.5.0
+    License: The Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+  - quartz-jobs (https://www.quartz-scheduler.org/) org.quartz-scheduler:quartz-jobs:jar:2.5.0
+    License: The Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+
+From: 'Apache Software Foundation' (http://www.apache.org/)
+
+  - Avalon Framework API (http://www.apache.org/excalibur/avalon-framework/avalon-framework-api/) org.apache.avalon.framework:avalon-framework-api:jar:4.3.1
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+  - Avalon Framework Implementation (http://www.apache.org/excalibur/avalon-framework/avalon-framework-impl/) org.apache.avalon.framework:avalon-framework-impl:jar:4.3.1
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+
+From: 'Eclipse Foundation' (https://www.eclipse.org)
+
+  - Jakarta Activation (https://github.com/eclipse-ee4j/jaf/jakarta.activation) com.sun.activation:jakarta.activation:jar:2.0.1
+    License: EDL 1.0  (http://www.eclipse.org/org/documents/edl-v10.php)
+
+  - istack common utility code runtime (https://projects.eclipse.org/projects/ee4j/istack-commons/istack-commons-runtime) com.sun.istack:istack-commons-runtime:jar:4.1.2
+    License: Eclipse Distribution License - v 1.0  (http://www.eclipse.org/org/documents/edl-v10.php)
+
+  - Jakarta Activation API (https://github.com/jakartaee/jaf-api) jakarta.activation:jakarta.activation-api:jar:2.1.2
+    License: EDL 1.0  (http://www.eclipse.org/org/documents/edl-v10.php)
+
+  - Jakarta XML Binding API (https://github.com/eclipse-ee4j/jaxb-api/jakarta.xml.bind-api) jakarta.xml.bind:jakarta.xml.bind-api:jar:4.0.1
+    License: Eclipse Distribution License - v 1.0  (http://www.eclipse.org/org/documents/edl-v10.php)
+
+  - Angus Activation Registries (https://github.com/eclipse-ee4j/angus-activation/angus-activation) org.eclipse.angus:angus-activation:jar:2.0.1
+    License: EDL 1.0  (http://www.eclipse.org/org/documents/edl-v10.php)
+
+  - JAXB Core (https://eclipse-ee4j.github.io/jaxb-ri/) org.glassfish.jaxb:jaxb-core:jar:4.0.4
+    License: Eclipse Distribution License - v 1.0  (http://www.eclipse.org/org/documents/edl-v10.php)
+
+  - JAXB Runtime (https://eclipse-ee4j.github.io/jaxb-ri/) org.glassfish.jaxb:jaxb-runtime:jar:4.0.4
+    License: Eclipse Distribution License - v 1.0  (http://www.eclipse.org/org/documents/edl-v10.php)
+
+  - TXW2 Runtime (https://eclipse-ee4j.github.io/jaxb-ri/) org.glassfish.jaxb:txw2:jar:4.0.4
+    License: Eclipse Distribution License - v 1.0  (http://www.eclipse.org/org/documents/edl-v10.php)
+
+
+From: 'EE4J Community' (https://github.com/eclipse-ee4j)
+
+  - javax.transaction API (https://projects.eclipse.org/projects/ee4j.jta) jakarta.transaction:jakarta.transaction-api:jar:1.3.3
+    License: EPL 2.0  (http://www.eclipse.org/legal/epl-2.0)
+    License: GPL2 w/ CPE  (https://www.gnu.org/software/classpath/license.html)
+
+
+From: 'FasterXML' (http://fasterxml.com/)
+
+  - Jackson-annotations (http://github.com/FasterXML/jackson) com.fasterxml.jackson.core:jackson-annotations:bundle:2.12.3
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+  - Jackson-core (https://github.com/FasterXML/jackson-core) com.fasterxml.jackson.core:jackson-core:bundle:2.12.3
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+  - jackson-databind (http://github.com/FasterXML/jackson) com.fasterxml.jackson.core:jackson-databind:bundle:2.12.3
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+  - Jackson datatype: org.json (https://github.com/FasterXML/jackson-datatypes-misc) com.fasterxml.jackson.datatype:jackson-datatype-json-org:jar:2.17.2
+    License: The Apache Software License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+
+From: 'Google LLC' (http://www.google.com)
+
+  - error-prone annotations (https://errorprone.info/error_prone_annotations) com.google.errorprone:error_prone_annotations:jar:2.21.1
+    License: Apache 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+
+From: 'Oracle' (http://www.oracle.com)
+
+  - Jakarta Mail API (http://eclipse-ee4j.github.io/mail/jakarta.mail) com.sun.mail:jakarta.mail:jar:2.0.1
+    License: EPL 2.0  (http://www.eclipse.org/legal/epl-2.0)
+    License: GPL2 w/ CPE  (https://www.gnu.org/software/classpath/license.html)
+    License: EDL 1.0  (http://www.eclipse.org/org/documents/edl-v10.php)
+
+
+From: 'Oracle Corporation' (https://www.oracle.com/)
+
+  - MySQL Connector/J (http://dev.mysql.com/doc/connector-j/en/) com.mysql:mysql-connector-j:jar:8.3.0
+    License: The GNU General Public License, v2 with Universal FOSS Exception, v1.0 
+
+
+From: 'QOS.ch' (http://www.qos.ch)
+
+  - SLF4J API Module (http://www.slf4j.org) org.slf4j:slf4j-api:jar:2.0.11
+    License: MIT License  (http://www.opensource.org/licenses/mit-license.php)
+
+
+From: 'Terracotta, Inc.' (http://www.terracotta.org)
+
+  - ehcache (http://ehcache.org) net.sf.ehcache:ehcache:jar:2.10.9.2
+    License: The Apache Software License, Version 2.0  (src/assemble/EHCACHE-CORE-LICENSE.txt)
+
+
+From: 'The Apache Software Foundation' (http://www.apache.org/)
+
+  - Apache Commons Collections (http://commons.apache.org/collections/) commons-collections:commons-collections:jar:3.2.2
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+
+From: 'The Apache Software Foundation' (https://www.apache.org/)
+
+  - Apache Commons BeanUtils (https://commons.apache.org/proper/commons-beanutils/) commons-beanutils:commons-beanutils:jar:1.9.4
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+  - Apache Commons Codec (https://commons.apache.org/proper/commons-codec/) commons-codec:commons-codec:jar:1.15
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+  - Apache Commons IO (https://commons.apache.org/proper/commons-io/) commons-io:commons-io:jar:2.16.1
+    License: Apache-2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+  - Apache Commons Logging (https://commons.apache.org/proper/commons-logging/) commons-logging:commons-logging:jar:1.3.0
+    License: Apache-2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+  - Apache Commons Collections (https://commons.apache.org/proper/commons-collections/) org.apache.commons:commons-collections4:jar:4.4
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+  - Apache Commons Configuration (https://commons.apache.org/proper/commons-configuration/) org.apache.commons:commons-configuration2:jar:2.10.1
+    License: Apache-2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+  - Apache Commons DBCP (https://commons.apache.org/proper/commons-dbcp/) org.apache.commons:commons-dbcp2:jar:2.12.0
+    License: Apache-2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+  - Apache Commons Email Core (https://commons.apache.org/proper/commons-email/commons-email2-core/) org.apache.commons:commons-email2-core:jar:2.0.0-M1
+    License: Apache-2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+  - Apache Commons Email for Jakarta (https://commons.apache.org/proper/commons-email/commons-email2-jakarta/) org.apache.commons:commons-email2-jakarta:jar:2.0.0-M1
+    License: Apache-2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+  - Apache Commons JCS :: Core (http://commons.apache.org/proper/commons-jcs/commons-jcs3-core/) org.apache.commons:commons-jcs3-core:jar:3.2
+    License: Apache-2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+  - Apache Commons Lang (https://commons.apache.org/proper/commons-lang/) org.apache.commons:commons-lang3:jar:3.14.0
+    License: Apache-2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+  - Apache Commons Pool (https://commons.apache.org/proper/commons-pool/) org.apache.commons:commons-pool2:jar:2.12.0
+    License: Apache-2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+  - Apache Commons Text (https://commons.apache.org/proper/commons-text) org.apache.commons:commons-text:jar:1.12.0
+    License: Apache-2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+  - Fulcrum Cache (http://turbine.apache.org/fulcrum/fulcrum-cache) org.apache.fulcrum:fulcrum-cache:jar:2.0.1
+    License: Apache-2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+  - Fulcrum Crypto (http://turbine.apache.org/fulcrum/fulcrum-crypto) org.apache.fulcrum:fulcrum-crypto:jar:1.0.8
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+  - Fulcrum Factory (http://turbine.apache.org/fulcrum/fulcrum-factory) org.apache.fulcrum:fulcrum-factory:jar:1.1.1
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+  - Fulcrum Intake Service (https://turbine.apache.org/fulcrum/fulcrum-intake) org.apache.fulcrum:fulcrum-intake:jar:4.0.0
+    License: Apache-2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+  - Fulcrum JSON API (http://turbine.apache.org/fulcrum/fulcrum-json/fulcrum-json-api) org.apache.fulcrum:fulcrum-json-api:jar:2.0.1
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+  - Fulcrum JSON Jackson 2.x Impl (http://turbine.apache.org/fulcrum/fulcrum-json/fulcrum-json-jackson2) org.apache.fulcrum:fulcrum-json-jackson2:jar:2.0.1
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+  - Fulcrum Localization (http://turbine.apache.org/fulcrum/fulcrum-localization) org.apache.fulcrum:fulcrum-localization:jar:2.0.0
+    License: Apache-2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+  - Fulcrum Mimetype (http://turbine.apache.org/fulcrum/fulcrum-mimetype/) org.apache.fulcrum:fulcrum-mimetype:jar:1.0.6
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+  - Fulcrum Parser Service (http://turbine.apache.org/fulcrum/fulcrum-parser) org.apache.fulcrum:fulcrum-parser:jar:4.0.0
+    License: Apache-2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+  - Fulcrum Pool (http://turbine.apache.org/fulcrum/fulcrum-pool) org.apache.fulcrum:fulcrum-pool:jar:1.0.5
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+  - Fulcrum Quartz (https://turbine.apache.org/fulcrum/fulcrum-quartz/) org.apache.fulcrum:fulcrum-quartz:jar:2.0.0
+    License: Apache-2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+  - Fulcrum Security API (https://turbine.apache.org/fulcrum/fulcrum-security/fulcrum-security-api) org.apache.fulcrum:fulcrum-security-api:jar:4.0.0
+    License: Apache-2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+  - Fulcrum Security Memory Impl (https://turbine.apache.org/fulcrum/fulcrum-security/fulcrum-security-memory) org.apache.fulcrum:fulcrum-security-memory:jar:4.0.0
+    License: Apache-2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+  - Fulcrum Security Torque Impl (https://turbine.apache.org/fulcrum/fulcrum-security/fulcrum-security-torque) org.apache.fulcrum:fulcrum-security-torque:jar:4.0.0
+    License: Apache-2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+  - Fulcrum XSLT (http://turbine.apache.org/fulcrum/fulcrum-xslt) org.apache.fulcrum:fulcrum-xslt:jar:1.1.1
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+  - Fulcrum YAAFI (http://turbine.apache.org/fulcrum/fulcrum-yaafi) org.apache.fulcrum:fulcrum-yaafi:jar:2.0.1
+    License: Apache-2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+  - Apache Log4j 1.x Compatibility API (https://logging.apache.org/log4j/2.x/log4j/log4j-1.2-api/) org.apache.logging.log4j:log4j-1.2-api:jar:2.23.1
+    License: Apache-2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+  - Apache Log4j API (https://logging.apache.org/log4j/2.x/) org.apache.logging.log4j:log4j-api:jar:2.25.1
+    License: Apache-2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+  - Apache Log4j Core (https://logging.apache.org/log4j/2.x/) org.apache.logging.log4j:log4j-core:jar:2.25.1
+    License: Apache-2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+  - Apache Log4j Jakarta Web (https://logging.apache.org/log4j/2.x/) org.apache.logging.log4j:log4j-jakarta-web:jar:2.25.1
+    License: Apache-2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+  - Apache Log4j Commons Logging Bridge (https://logging.apache.org/log4j/2.x/log4j/log4j-jcl/) org.apache.logging.log4j:log4j-jcl:jar:2.23.1
+    License: Apache-2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+  - SLF4J 1 Binding for Log4j API (https://logging.apache.org/log4j/2.x/log4j/log4j-slf4j-impl/) org.apache.logging.log4j:log4j-slf4j-impl:jar:2.24.3
+    License: Apache-2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+  - Torque Runtime (https://db.apache.org/torque/torque-runtime/) org.apache.torque:torque-runtime:jar:6.0
+    License: Apache-2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+  - Apache Turbine (http://turbine.apache.org/turbine/turbine-7-0) org.apache.turbine:turbine:jar:7.0
+    License: Apache-2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+  - Apache Velocity - Engine (http://velocity.apache.org/engine/devel/velocity-engine-core/) org.apache.velocity:velocity-engine-core:jar:2.3
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+
+
+
+
