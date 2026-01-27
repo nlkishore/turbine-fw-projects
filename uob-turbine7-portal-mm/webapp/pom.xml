@@ -31,6 +31,32 @@
                     </archive>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>copy-admin-view-components</id>
+                        <phase>process-resources</phase>
+                        <goals>
+                            <goal>copy-resources</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>${project.basedir}/../webapp/src/main/webapp/templates/app/admin</outputDirectory>
+                            <resources>
+                                <resource>
+                                    <directory>${project.basedir}/../admin-view/src/main/webapp</directory>
+                                    <includes>
+                                        <include>**/*.vm</include>
+                                        <include>**/*.css</include>
+                                        <include>**/*.js</include>
+                                    </includes>
+                                </resource>
+                            </resources>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
         </plugins>
     </build>
 
@@ -49,6 +75,11 @@
         <dependency>
             <groupId>com.uob</groupId>
             <artifactId>spring-rest-api</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.uob</groupId>
+            <artifactId>admin-view</artifactId>
             <version>${project.version}</version>
         </dependency>
 

@@ -41,6 +41,7 @@ under the License.
         <module>torque-orm</module>
         <module>turbine-model-controller</module>
         <module>spring-rest-api</module>
+        <module>admin-view</module>
         <module>webapp</module>
     </modules>
 

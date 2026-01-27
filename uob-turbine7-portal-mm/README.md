@@ -2,6 +2,10 @@
 
 A standalone, portable multi-module Maven project for the UOB Turbine 7 Portal application.
 
+## Documentation
+
+All project documentation has been organized into the [`documentation/`](./documentation/) folder. See [documentation/README.md](./documentation/README.md) for a complete index of all documentation files.
+
 ## Quick Start
 
 ### One-Time Setup
@@ -65,14 +69,15 @@ mvn clean install -DskipTests
 
 ## Documentation
 
-- **[SECURITY-AUDIT.md](SECURITY-AUDIT.md)** - Security audit, CVE assessment, and customized classes review
-- **[DEVELOPMENT-PROMPTS.md](DEVELOPMENT-PROMPTS.md)** - Complete history of developer prompts and requests
-- **[FINAL-BUILD-SOLUTION.md](FINAL-BUILD-SOLUTION.md)** - Complete build solution
-- **[BUILD-SOLUTION.md](BUILD-SOLUTION.md)** - Build workflow guide
-- **[BUILD-INSTRUCTIONS.md](BUILD-INSTRUCTIONS.md)** - Detailed instructions
-- **[PROJECT-DOCUMENTATION.md](PROJECT-DOCUMENTATION.md)** - Technical documentation
-- **[SETUP-GUIDE.md](SETUP-GUIDE.md)** - Step-by-step setup
-- **[TORQUE-BASE-CLASSES.md](TORQUE-BASE-CLASSES.md)** - Base class guide
+All project documentation has been organized into the [`documentation/`](./documentation/) folder. See [documentation/README.md](./documentation/README.md) for a complete index of all documentation files.
+
+**Quick Links:**
+- [Quick Start Guide](./documentation/QUICK-START.md)
+- [Build Instructions](./documentation/BUILD-INSTRUCTIONS.md)
+- [Setup Guide](./documentation/SETUP-GUIDE.md)
+- [Project Documentation](./documentation/PROJECT-DOCUMENTATION.md)
+- [React Deployment Guide](./documentation/REACT-TOMCAT-DEPLOYMENT-GUIDE.md)
+- [API Integration Guide](./documentation/API-INTEGRATION-PROBLEMS-AND-RESOLUTIONS.md)
 
 ## Features
 
