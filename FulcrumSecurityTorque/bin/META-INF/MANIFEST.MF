@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Created-By: Maven Source Plugin 3.3.1
+Specification-Title: Fulcrum Security Torque Impl
+Specification-Version: 4.0
+Specification-Vendor: The Apache Software Foundation
+Implementation-Title: Fulcrum Security Torque Impl
+Implementation-Version: 4.0.0
+Implementation-Vendor: The Apache Software Foundation
+

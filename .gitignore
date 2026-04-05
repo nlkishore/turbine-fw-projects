@@ -1,0 +1,14 @@
+# Maven / Java
+**/target/
+*.class
+
+# Eclipse workspace cache (large)
+.metadata/
+
+# Logs / local
+**/logs/
+*.log
+
+# OS
+Thumbs.db
+Desktop.ini

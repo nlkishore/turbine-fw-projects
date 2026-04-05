@@ -1,0 +1,69 @@
+// ------------------------------------------------------------------
+// Transitive dependencies of this project determined from the
+// maven pom organized by organization.
+// ------------------------------------------------------------------
+
+Fulcrum Security Torque Impl
+
+
+From: 'EE4J Community' (https://github.com/eclipse-ee4j)
+
+  - javax.transaction API (https://projects.eclipse.org/projects/ee4j.jta) jakarta.transaction:jakarta.transaction-api:jar:1.3.3
+    License: EPL 2.0  (http://www.eclipse.org/legal/epl-2.0)
+    License: GPL2 w/ CPE  (https://www.gnu.org/software/classpath/license.html)
+
+
+From: 'The Apache Software Foundation' (http://www.apache.org/)
+
+  - Apache Commons Collections (http://commons.apache.org/collections/) commons-collections:commons-collections:jar:3.2.2
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+
+From: 'The Apache Software Foundation' (https://www.apache.org/)
+
+  - Apache Commons BeanUtils (https://commons.apache.org/proper/commons-beanutils/) commons-beanutils:commons-beanutils:jar:1.9.4
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+  - Apache Commons Codec (http://commons.apache.org/proper/commons-codec/) commons-codec:commons-codec:jar:1.11
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+  - Apache Commons Logging (https://commons.apache.org/proper/commons-logging/) commons-logging:commons-logging:jar:1.3.0
+    License: Apache-2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+  - Apache Commons Configuration (https://commons.apache.org/proper/commons-configuration/) org.apache.commons:commons-configuration2:jar:2.10.1
+    License: Apache-2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+  - Apache Commons DBCP (https://commons.apache.org/proper/commons-dbcp/) org.apache.commons:commons-dbcp2:jar:2.12.0
+    License: Apache-2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+  - Apache Commons JCS :: Core (http://commons.apache.org/proper/commons-jcs/commons-jcs3-core/) org.apache.commons:commons-jcs3-core:jar:3.2
+    License: Apache-2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+  - Apache Commons Lang (https://commons.apache.org/proper/commons-lang/) org.apache.commons:commons-lang3:jar:3.14.0
+    License: Apache-2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+  - Apache Commons Pool (https://commons.apache.org/proper/commons-pool/) org.apache.commons:commons-pool2:jar:2.12.0
+    License: Apache-2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+  - Apache Commons Text (https://commons.apache.org/proper/commons-text) org.apache.commons:commons-text:jar:1.12.0
+    License: Apache-2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+  - Fulcrum Crypto (http://turbine.apache.org/fulcrum/fulcrum-crypto) org.apache.fulcrum:fulcrum-crypto:jar:1.0.8
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+  - Fulcrum Security API (https://turbine.apache.org/fulcrum/fulcrum-security/fulcrum-security-api) org.apache.fulcrum:fulcrum-security-api:jar:4.0.0
+    License: Apache-2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+  - Apache Log4j 1.x Compatibility API (https://logging.apache.org/log4j/2.x/log4j/log4j-1.2-api/) org.apache.logging.log4j:log4j-1.2-api:jar:2.23.1
+    License: Apache-2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+  - Apache Log4j Commons Logging Bridge (https://logging.apache.org/log4j/2.x/log4j/log4j-jcl/) org.apache.logging.log4j:log4j-jcl:jar:2.23.1
+    License: Apache-2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+  - Torque Runtime (https://db.apache.org/torque/torque-runtime/) org.apache.torque:torque-runtime:jar:6.0
+    License: Apache-2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+
+
+
+
