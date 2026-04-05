@@ -1,5 +1,7 @@
 # Maven / Java
 **/target/
+**/build/
+**/bin/
 *.class
 
 # Eclipse workspace cache (large)
@@ -7,7 +9,12 @@
 
 # Logs / local
 **/logs/
-*.log
+**/*.log
+
+# JBoss/WildFly temporary and log folders
+**/standalone/log/
+**/standalone/tmp/
+**/standalone/data/
 
 # OS
 Thumbs.db
