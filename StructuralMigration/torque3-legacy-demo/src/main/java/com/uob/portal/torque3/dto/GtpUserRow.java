@@ -8,6 +8,7 @@ import java.util.Objects;
 public final class GtpUserRow {
 
     private final Integer userId;
+    private final Integer turbineUserId;
     private final String loginName;
     private final String passwordValue;
     private final String firstName;
@@ -16,12 +17,14 @@ public final class GtpUserRow {
 
     public GtpUserRow(
             Integer userId,
+            Integer turbineUserId,
             String loginName,
             String passwordValue,
             String firstName,
             String lastName,
             String email) {
         this.userId = userId;
+        this.turbineUserId = turbineUserId;
         this.loginName = loginName;
         this.passwordValue = passwordValue;
         this.firstName = firstName;
@@ -31,6 +34,10 @@ public final class GtpUserRow {
 
     public Integer getUserId() {
         return userId;
+    }
+
+    public Integer getTurbineUserId() {
+        return turbineUserId;
     }
 
     public String getLoginName() {
@@ -58,6 +65,8 @@ public final class GtpUserRow {
         return "GtpUserRow{"
                 + "userId="
                 + userId
+                + ", turbineUserId="
+                + turbineUserId
                 + ", loginName='"
                 + loginName
                 + '\''
@@ -82,11 +91,13 @@ public final class GtpUserRow {
             return false;
         }
         GtpUserRow that = (GtpUserRow) o;
-        return Objects.equals(userId, that.userId) && Objects.equals(loginName, that.loginName);
+        return Objects.equals(userId, that.userId)
+                && Objects.equals(turbineUserId, that.turbineUserId)
+                && Objects.equals(loginName, that.loginName);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(userId, loginName);
+        return Objects.hash(userId, turbineUserId, loginName);
     }
 }

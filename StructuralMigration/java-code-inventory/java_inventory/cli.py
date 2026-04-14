@@ -3,7 +3,7 @@ from __future__ import annotations
 import argparse
 from pathlib import Path
 
-from java_inventory.scanner import scan_java_project, write_csv
+from java_inventory.scanner import scan_java_project, scan_torque_schemas, write_csv
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -73,8 +73,26 @@ def main() -> int:
     )
     write_csv(output / "packages.csv", result["packages"], ["package_name", "file_count"])
     write_csv(output / "parse_issues.csv", result["parse_issues"], ["file_path", "error_type", "message"])
+    schema_rows = scan_torque_schemas(root=root, encoding=args.encoding)
+    write_csv(
+        output / "schema_classification.csv",
+        schema_rows,
+        [
+            "file_path",
+            "schema_type",
+            "root_tag",
+            "uses_dtd",
+            "uses_torque_xsd",
+            "has_interface_attr",
+            "has_base_class_attr",
+            "has_peer_interface_attr",
+            "recommended_migration_mode",
+            "notes",
+        ],
+    )
 
     print(f"Scan completed.\nRoot: {root}\nOutput: {output}")
     for name, rows in result.items():
         print(f"- {name}: {len(rows)}")
+    print(f"- schema_classification: {len(schema_rows)}")
     return 0

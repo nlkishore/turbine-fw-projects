@@ -224,3 +224,74 @@ def write_csv(path: Path, rows: list[dict[str, str]], fieldnames: list[str]) -> 
         writer.writeheader()
         for row in rows:
             writer.writerow({k: row.get(k, "") for k in fieldnames})
+
+
+def scan_torque_schemas(root: Path, encoding: str = "utf-8") -> list[dict[str, str]]:
+    rows: list[dict[str, str]] = []
+    xml_files = list(root.rglob("*.xml"))
+    for p in xml_files:
+        rel = str(p.relative_to(root)).replace("\\", "/")
+        name_low = p.name.lower()
+        rel_low = rel.lower()
+        if "schema" not in name_low and "/torque-schema/" not in rel_low and "/schema/" not in rel_low:
+            continue
+        try:
+            text = p.read_text(encoding=encoding, errors="replace")
+        except Exception as e:  # pragma: no cover
+            rows.append(
+                {
+                    "file_path": rel,
+                    "schema_type": "unreadable",
+                    "root_tag": "",
+                    "uses_dtd": "false",
+                    "uses_torque_xsd": "false",
+                    "has_interface_attr": "false",
+                    "has_base_class_attr": "false",
+                    "has_peer_interface_attr": "false",
+                    "recommended_migration_mode": "manual_review",
+                    "notes": f"read_error:{type(e).__name__}",
+                }
+            )
+            continue
+
+        uses_dtd = "<!doctype database" in text.lower()
+        uses_torque_xsd = "db.apache.org/torque/" in text.lower() and "xsd" in text.lower()
+        has_interface_attr = bool(re.search(r"\binterface\s*=", text))
+        has_base_class_attr = bool(re.search(r"\bbaseClass\s*=", text))
+        has_peer_interface_attr = bool(re.search(r"\bpeerInterface\s*=", text))
+        root_tag_match = re.search(r"<\s*(database|schema)\b", text, flags=re.IGNORECASE)
+        root_tag = root_tag_match.group(1).lower() if root_tag_match else ""
+
+        if uses_dtd:
+            schema_type = "torque3_dtd"
+            mode = "legacy_mapbuilder_or_manual_bridge"
+            notes = "Legacy DTD schema; interface/baseClass attributes are normally unavailable."
+        elif uses_torque_xsd and (has_interface_attr or has_base_class_attr or has_peer_interface_attr):
+            schema_type = "torque5_xsd_interface_capable"
+            mode = "schema_driven_interface_generation"
+            notes = "Schema supports interface/baseClass/peerInterface mapping."
+        elif uses_torque_xsd:
+            schema_type = "torque5_xsd_basic"
+            mode = "schema_codegen_without_interface_contracts"
+            notes = "XSD schema present; interface mapping attributes not found."
+        else:
+            schema_type = "generic_xml_or_unknown"
+            mode = "manual_review"
+            notes = "Could not confidently classify as Torque DTD/XSD schema."
+
+        rows.append(
+            {
+                "file_path": rel,
+                "schema_type": schema_type,
+                "root_tag": root_tag,
+                "uses_dtd": str(uses_dtd).lower(),
+                "uses_torque_xsd": str(uses_torque_xsd).lower(),
+                "has_interface_attr": str(has_interface_attr).lower(),
+                "has_base_class_attr": str(has_base_class_attr).lower(),
+                "has_peer_interface_attr": str(has_peer_interface_attr).lower(),
+                "recommended_migration_mode": mode,
+                "notes": notes,
+            }
+        )
+
+    return sorted(rows, key=lambda x: x["file_path"])

@@ -33,6 +33,7 @@ public final class GtpUserMapBuilder implements MapBuilder {
         table.setPrimaryKeyMethod("native");
 
         table.addPrimaryKey("user_id", Integer.valueOf(0), Types.INTEGER);
+        table.addColumn("turbine_user_id", null, Types.INTEGER);
         table.addColumn("login_name", null, Types.VARCHAR, 255);
         table.addColumn("password_value", null, Types.VARCHAR, 255);
         table.addColumn("first_name", null, Types.VARCHAR, 255);

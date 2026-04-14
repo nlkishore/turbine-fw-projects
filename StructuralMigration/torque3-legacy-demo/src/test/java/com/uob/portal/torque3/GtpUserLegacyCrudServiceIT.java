@@ -20,6 +20,9 @@ import org.testcontainers.junit.jupiter.Container;
 import org.testcontainers.junit.jupiter.Testcontainers;
 
 import com.uob.portal.torque3.dto.GtpUserRow;
+import com.uob.portal.torque3.turbine.GtpUserTurbineIntegrationService;
+import com.uob.portal.torque3.turbine.SimpleTurbineUser;
+import com.uob.portal.torque3.turbine.TurbineUserContract;
 
 import org.junit.jupiter.api.Assumptions;
 
@@ -98,5 +101,29 @@ class GtpUserLegacyCrudServiceIT {
 
         assertThat(GtpUserLegacyCrudService.deleteByUserId(created.getUserId())).isTrue();
         assertThat(GtpUserLegacyCrudService.findByUserId(created.getUserId())).isNull();
+    }
+
+    @Test
+    void turbine_mapping_roundTrip() throws Exception {
+        SimpleTurbineUser turbineUser =
+                new SimpleTurbineUser(
+                        Integer.valueOf(1001),
+                        "legacy.turbine",
+                        "secret",
+                        "Legacy",
+                        "User",
+                        "legacy.user@example.com");
+        GtpUserRow created = GtpUserTurbineIntegrationService.createFromTurbineUser(turbineUser);
+        assertThat(created.getUserId()).isNotNull();
+        assertThat(created.getTurbineUserId()).isEqualTo(1001);
+        assertThat(created.getLoginName()).isEqualTo("legacy.turbine");
+
+        GtpUserRow byTurbineId = GtpUserLegacyCrudService.findByTurbineUserId(1001);
+        assertThat(byTurbineId).isNotNull();
+        assertThat(byTurbineId.getLoginName()).isEqualTo("legacy.turbine");
+
+        TurbineUserContract resolved = GtpUserTurbineIntegrationService.findTurbineUserById(1001);
+        assertThat(resolved).isNotNull();
+        assertThat(resolved.getUserName()).isEqualTo("legacy.turbine");
     }
 }

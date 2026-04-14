@@ -21,3 +21,5 @@ Looking for feedback , on the approach to do Upgarde of Legacy web application u
 To be migrated to Torque 7.x , Turbine 7.x , Spring 6.x , Jetspeed upgarde to support JDK17 , Jakarta EE .
 
 Approach Thought : Capture all Java Imports from all Java files used in Legacy , then create dummy project with all Turbine 7.x, Torque 7.x, Soring 6.x ,Jetspeed component for cursor or AI tool to review all the imports and create valid  OpenRewrite Recipe so that  import can be migrated to support latest Tech Stack , then functional upgrade can be progressively do manual upgrade where required .
+
+From Torque3-legacy-demo , how to map the turbine User to gtp_user class , create service class to do crud operations .create additional calss and modify teh schema if required to map turbine user interface with gtp_user. project path : C:\Users\nlaxm\TurbineProjectWorkspace\StructuralMigration\torque3-legacy-demo

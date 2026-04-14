@@ -15,6 +15,8 @@ This utility scans any Java codebase and exports CSV reports for:
    package name, file count
 5. **Parse issues** (`parse_issues.csv`)  
    files that failed full AST parse (scanner still captures imports with fallback)
+6. **Schema classification** (`schema_classification.csv`)  
+   detects Torque schema style (`torque3_dtd`, `torque5_xsd_*`) and whether interface/baseClass/peerInterface attributes are present
 
 ## Why these extra reports?
 
@@ -49,6 +51,7 @@ python run_inventory.py --root "C:\path\to\any\java\root" --output ".\output"
 - `classes.csv`
 - `packages.csv`
 - `parse_issues.csv`
+- `schema_classification.csv`
 
 ## Notes
 
